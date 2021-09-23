@@ -8,6 +8,7 @@ getJSON('settings.json').then(listingsJSON => {
     document.getElementById("header1-title").innerText = blogName
 })
 
+async function genBody() {
 let decodedURL = decodeURI(location.href);
 let paramString = decodedURL.split('?')[1];
 let args = new URLSearchParams(paramString);
@@ -20,3 +21,5 @@ fetch(urlOfMarkdown)
     var blogMD = await blob.text();
     document.getElementById("body").innerHTML = converter.makeHtml(blogMD)
 })
+}
+genBody()

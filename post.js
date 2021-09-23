@@ -15,16 +15,16 @@ let args = new URLSearchParams(paramString);
 
 let urlOfMarkdown = args.get("listingURL")
 let converter = new showdown.Converter();
-var blogMD
-fetch(urlOfMarkdown)
+async function getTextThenSetBody() {
+    fetch(urlOfMarkdown)
   .then(function(response) {
     response.text().then(function(text) {
-        blogMD = await blob.text();
-        setBody()
+        let blogMD = await blob.text();
+        setBody(blogMD)
     })
 })
+}
 
-
-function setBody() {
-    document.getElementById("body").innerHTML = converter.makeHtml(blogMD)
+function setBody(md) {
+    document.getElementById("body").innerHTML = converter.makeHtml(md)
 }

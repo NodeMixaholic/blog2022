@@ -19,4 +19,4 @@ let args = new URLSearchParams(paramString);
 
 let urlOfMarkdown = args.get("listingURL")
 let converter = new showdown.Converter();
-document.getElementById("body").innerHTML = converter.makeHtml(getText(urlOfMarkdown))
+document.getElementById("body").innerHTML = converter.makeHtml(String(getText(urlOfMarkdown)))

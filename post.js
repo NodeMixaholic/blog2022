@@ -15,11 +15,11 @@ let args = new URLSearchParams(paramString);
 
 let urlOfMarkdown = args.get("listingURL")
 let converter = new showdown.Converter();
-async function getTextThenSetBody() {
+function getTextThenSetBody() {
     fetch(urlOfMarkdown)
-  .then(function(response) {
+    .then(function(response) {
     response.text().then(function(text) {
-        let blogMD = await blob.text();
+        let blogMD = blob.text();
         setBody(blogMD)
     })
 })

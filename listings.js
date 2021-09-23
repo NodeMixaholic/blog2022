@@ -2,7 +2,7 @@ function getJSON(path) {
     return fetch(path).then(response => response.json());
 }
 getJSON('settings.json').then(listingsJSON => {
-    let parsed = JSON.parse(listingsJSON);
+    let parsed = listingsJSON;
     const blogName = parsed.pageTitle
     document.getElementById("title").innerText = blogName
     document.getElementById("header1-title").innerText = blogName

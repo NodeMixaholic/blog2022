@@ -9,7 +9,7 @@ getJSON('settings.json').then(listingsJSON => {
 })
 
 getJSON('listings.json').then(listingsJSON => {
-    let parsed = JSON.parse(listingsJSON);
+    let parsed = listingsJSON;
     let listings = parsed.listings
     for (let i = 0; i <= listings.length; i++) {
         let currentURL = location.href

@@ -17,5 +17,5 @@ let converter = new showdown.Converter();
 fetch(urlOfMarkdown)
   .then(res => res.blob()) // Gets the response and returns it as a blob
   .then(blob => {
-    document.getElementById("body").innerHTML = converter.makeHTML(blob.text)
+    document.getElementById("body").innerHTML = converter.makeHtml(blob.text)
 })

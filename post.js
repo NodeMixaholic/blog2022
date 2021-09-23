@@ -2,10 +2,6 @@ function getJSON(path) {
     return fetch(path).then(response => response.json());
 }
 
-function getText(path) {
-    return fetch(path).then(response => response.text());
-}
-
 getJSON('settings.json').then(listingsJSON => {
     let parsed = listingsJSON;
     const blogName = parsed.pageTitle
@@ -19,4 +15,16 @@ let args = new URLSearchParams(paramString);
 
 let urlOfMarkdown = args.get("listingURL")
 let converter = new showdown.Converter();
-document.getElementById("body").innerHTML = getText(urlOfMarkdown).then(text => converter.makeHtml(text))
+var blogMD
+fetch(urlOfMarkdown)
+  .then(function(response) {
+    response.text().then(function(text) {
+        blogMD = await blob.text();
+        setBody()
+    })
+})
+
+
+function setBody() {
+    document.getElementById("body").innerHTML = converter.makeHtml(blogMD)
+}

@@ -1,2 +1,2 @@
-# blog2021
-Blog powered by BlogJS
+# blog2022
+Blog powered by my project called BlogJS

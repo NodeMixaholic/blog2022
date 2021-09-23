@@ -1,0 +1,6 @@
+{
+    "listings": [
+        {"postName":"John Doe", "relativeURL":"test_posts/john_doe.md"},
+        {"postName":"Jane Doe", "relativeURL":"test_posts/jane_doe.md"}
+    ]
+}

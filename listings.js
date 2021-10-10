@@ -10,7 +10,7 @@ getJSON('settings.json').then(listingsJSON => {
 
 getJSON('listings.json').then(listingsJSON => {
     let parsed = listingsJSON;
-    let listings = parsed.listings
+    var listings = parsed.listings
     for (let i = 0; i <= listings.length; i++) {
         let currentURL = location.href
         let currentPage = currentURL.split('#').shift().split('?').shift().split('/').pop()

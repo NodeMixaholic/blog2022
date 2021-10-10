@@ -1,0 +1,2 @@
+# A brand new blog system.
+I have created a brand new blogging CMS called "BlogJS", which is much easier and more fun than my old "pages.js" system. And, of course, it's open source. Find it [here.](https://github.com/sparksammy/BlogJS)

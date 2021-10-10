@@ -38,3 +38,4 @@ async function setBody() {
     let contents = await getText(urlOfMarkdown)
     document.getElementById("body").innerHTML = parseMD(contents)
 }
+setBody()

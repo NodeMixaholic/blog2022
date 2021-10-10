@@ -32,7 +32,7 @@ let decodedURL = decodeURI(location.href);
 let paramString = decodedURL.split('?')[1];
 let args = new URLSearchParams(paramString);
 
-var urlOfMarkdown = args.get("listingURL")
+let urlOfMarkdown = args.get("listingURL")
 
 async function setBody() {
     let contents = await getText(urlOfMarkdown)

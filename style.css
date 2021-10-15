@@ -1,23 +1,13 @@
 
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
-
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-html { font-size:1rem; }
-p {font-size:1rem;}
-b {font-size:1.2rem;}
-a {font-size:1.23rem;} 
-h6 {font-size:1.23rem;}
-h5 {font-size:1.35rem;}
-h4 {font-size:1.5rem;}
-h3 {font-size:1.6rem;}
-h2 {font-size:1.8rem;}
-h1 {font-size:2rem;}
-
-body { font-family: Arial, Helvetica, sans-serif; background-color: #f4e5b5; }
-img { font-family: Arial, Helvetica, sans-serif; width: "24%"; font-size:1.2rem; }
+    html { font-size: 1.3vmax; }
+    p {font-size: 1.3vmax;}
+    b {font-size: 1.43vmax;}
+    a {font-size: 1.43vmax;} 
+    h6 {font-size: 1.43vmax;}
+    h5 {font-size: 1.45vmax;}
+    h4 {font-size: 1.46vmax;}
+    h3 {font-size: 1.7vmax;}
+    h2 {font-size: 1.8vmax;}
+    h1 {font-size: 2vmax;}
+    
+    body { font-family: Arial, Helvetica, sans-serif; background-color: #f4e5b5; text-align: center; }

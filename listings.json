@@ -1,5 +1,6 @@
 {
     "listings": [
+        {"postName":"Sparksammy who?", "relativeURL":"posts/rebrand.md"},
         {"postName":"New blog, new CMS.", "relativeURL":"posts/new-blog.md"}
     ]
 }
